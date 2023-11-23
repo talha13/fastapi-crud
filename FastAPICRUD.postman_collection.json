@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "58c72827-19bb-4e25-aa3d-a4b8dada6158",
+		"name": "FastAPICRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "901572",
+		"_collection_link": "https://pipilika-efile.postman.co/workspace/Self~104c741b-a5d5-42b3-a191-4ea220b8740b/collection/901572-58c72827-19bb-4e25-aa3d-a4b8dada6158?action=share&source=collection_link&creator=901572"
+	},
+	"item": [
+		{
+			"name": "Select Item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/items/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"items",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Headphone\",\n    \"description\": \"Noise cancellation Headphone\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/items",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
